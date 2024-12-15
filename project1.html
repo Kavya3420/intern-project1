@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Page Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: purple;
+            color: white;
+            font-size: 25px;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: purple;
+            padding: 10px 20px;
+            font-size: 20px;
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 30px;
+        }
+        nav a:hover {
+            background-color: white;
+            color: purple;
+        }
+        .quote-button {
+            background-color: orange;
+            color: white;
+            font-size: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .quote-button:hover {
+            background-color: #e68a00;
+        }
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 100px); /* Subtract the height of the navbar */
+        }
+        .main-content img {
+            width: 50%;
+            height: auto;
+            margin-right: 20px;
+            order: -1; /* Moves the image to the left */
+        }
+        .container {
+            flex: 1;
+            text-align: center;
+        }
+        .container button {
+            background-color: purple;
+            color: white;
+            font-size: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        .container button:hover {
+            background-color: rgb(47, 3, 53);
+        }
+        .contact-button {
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-button:hover {
+            background-color: #e68a00;
+        }
+        .header-title {
+            margin-right: 20px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="header-title">Digian</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="service.html">Service</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <button class="quote-button">GET A QUOTE</button>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <img src="slider-img.png" alt="Slider Image">
+
+        <div class="container">
+            <h1>Digital Marketing Experts</h1>
+            <p>Aenean scelerisque felis ut orci condimentum laoreet. Integer nisi nisl,<br>
+                convallis et augue sit amet, laoreet semper quam.</p>
+            
+            <button class="contact-button">Contact Us</button>
+        </div>
+    </div>
+</body>
+</html>

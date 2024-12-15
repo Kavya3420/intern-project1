@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four Content Boxes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            text-align: center;
+            text-decoration: solid;
+            font-size: 50px;
+        }
+        p {
+            text-align: center;
+            max-width: 600px;
+            font-size:15px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .box {
+
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 200px;
+            margin: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        img{
+            width:70px;
+            height:70px;
+        }
+        .box h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+            color:solid black;
+
+        }
+        .box p {
+            font-size: 20px;
+            color: black;
+            
+        }
+        button{
+            background-color: purple;
+            color:white;
+            bottom: 50px;
+            top:0px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Services</h1>
+    <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="container">
+        <div class="box">
+            <img src="s1.png">
+            <h2>Link Building</h2>
+            <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit.<br>Read More <b>--></b></p>
+        </div>
+        <div class="box">
+            <img src="s2.png">
+            <h2>On-page SEO</h2>
+            <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit.<br>Read More <b>--></b></p>
+        </div>
+        <div class="box">
+            <img src="s3.png" alt="slider image">
+            <h2>Online Marketing</h2>
+            <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit.<br>Read More <b>--></b></p>
+        </div>
+        <div class="box">
+            <img src="s4.png" alt="slider image">
+            <h2>Email Marketing</h2>
+            <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit.<br>Read More <b>--></b></p>
+        </div>
+    </div>
+    <button type="View More">View more</button>
+</body>
+</html>
+
